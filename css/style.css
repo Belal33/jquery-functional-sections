@@ -1,0 +1,117 @@
+:root {
+	font-family: "Kirang Haerang", system-ui;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#gallary-img {
+	max-width: 300px;
+	height: auto;
+}
+* {
+	box-sizing: border-box;
+}
+
+section:not(:first-child) {
+	display: none;
+}
+header {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	gap: 20px;
+
+	font-weight: 400;
+	font-size: 50px;
+	margin-bottom: 80px;
+}
+.sec-btn {
+	background-color: #ef6096;
+	border-bottom: #c5336a 5px solid;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0px 6px 10px 0px #808080a1;
+}
+.sec-btn:hover {
+	box-shadow: 0px 15px 10px 0px #808080a1;
+}
+.sec-btn:active {
+	background-color: #c5336a;
+	box-shadow: 0px 6px 10px 0px #808080a1;
+}
+main {
+	display: flex;
+	justify-content: center;
+}
+
+section > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 400px;
+	height: 400px;
+}
+section > div p {
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	align-self: center;
+	box-shadow: 0px 6px 10px 0px #808080a1;
+}
+
+.gallary > div {
+	justify-content: space-between;
+}
+
+.arrow-btn {
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0px 2px 5px 0px #808080a1;
+	border-radius: 10px;
+}
+.arrow-btn:active {
+	box-shadow: 0px 0 0 0 #808080a1;
+}
+.services-list {
+	display: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 29px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 107%;
+	left: 0;
+}
+.services-list li {
+	background-image: linear-gradient(to top, #c5336a, #ef6096);
+	padding: 10px;
+	border-radius: 10px;
+}
+.complain > div {
+	box-shadow: 0px 6px 10px 0px #808080a1;
+	flex-direction: column;
+}
+.complain > div > div {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+.complain > div > div:last-of-type {
+	flex-direction: column;
+	align-items: center;
+}
+.complain .complain-data div {
+	display: block;
+}
+textarea {
+	width: 250px;
+	height: 100px;
+}
